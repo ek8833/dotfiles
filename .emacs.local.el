@@ -3,7 +3,7 @@
 
 ;; ウィンドウ（フレーム）のサイズ設定する
 ;(setq default-frame-alist
-;	'((width . 268) (height . 61) (top . 22) (left . 0)))
+;  '((width . 268) (height . 61) (top . 22) (left . 0)))
 
 ;; js2-mode
 (autoload 'js2-mode "js2" nil t)
@@ -30,7 +30,7 @@
 ;(setq inferior-lisp-program "/usr/local/Cellar/sbcl/1.0.55/bin/")
 ;(setq slime-lisp-implementations
 ;      '((sbcl ("sbcl") :coding-system utf-8-unix)
-;	(cmucl ("cmucl") :coding-system iso-latin-1-unix)))
+;  (cmucl ("cmucl") :coding-system iso-latin-1-unix)))
 ;(add-to-list 'load-path "~/.emacs.d/elisp/slime")
 ;(add-hook 'lisp-mode-hook (lambda ()
 ;                            (slime-mode t)
@@ -49,3 +49,6 @@
      (add-to-list 'load-path "~/.emacs.d/elisp/slime/")  ; your SLIME directory
      (require 'slime)
      (slime-setup)
+
+;; command key to meta
+(setq mac-command-modifier 'meta)
